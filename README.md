@@ -25,7 +25,7 @@ Welcome to the heart of self-evaluation for 42 School projects! 📝
 	<a href="evo-sheets/PDFs/ft_printf.pdf">DOWNLOAD PDF</a>
 	<br>
 	<br>
-	<img src="evo-sheets/PNGs/libft.png">
+	<img src="evo-sheets/PNGs/ft_printf.png">
 </details>
 
 <br>
