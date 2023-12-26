@@ -275,5 +275,5 @@
 	<a href="evo-sheets/PDFs/ft_transcedence">DOWNLOAD PDF</a>
 	<br>
 	<br>
-	<img src="evo-sheets/PNGs/ft_transcedence.png">
+	<img src="evo-sheets/PNGs/ft_transcendence.png">
 </details>
