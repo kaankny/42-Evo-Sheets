@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Box Örneği</title>
+</head>
+<body>
+
+<h1>İsim Seçimi</h1>
+
+<!-- Dropdown box -->
+<select id="isimDropdown" onchange="isimDegistir()">
+    <option value="isim1">İsim 1</option>
+    <option value="isim2">İsim 2</option>
+    <!-- İhtiyacınıza göre diğer isimleri ekleyin -->
+</select>
+
+<!-- İsimlere göre PDF dosyalarının bulunduğu dizin -->
+<div id="pdfContainer">
+    <!-- Seçilen isme göre PDF dosyasının bağlantısı buraya eklenecek -->
+</div>
+
+<script>
+    function isimDegistir() {
+        var dropdown = document.getElementById("isimDropdown");
+        var selectedIsim = dropdown.options[dropdown.selectedIndex].value;
+        var pdfContainer = document.getElementById("pdfContainer");
+
+        // Seçilen isme göre PDF dosyasının adını belirleyin
+        var pdfDosyasi = selectedIsim + ".pdf";
+
+        // PDF dosyasının bağlantısını oluşturun
+        var pdfLink = document.createElement("a");
+        pdfLink.href = pdfDosyasi;
+        pdfLink.textContent = "İlgili PDF Dosyası";
+
+        // PDF bağlantısını PDF container'a ekleyin
+        pdfContainer.innerHTML = ""; // Önceki bağlantıları temizle
+        pdfContainer.appendChild(pdfLink);
+    }
+</script>
+
+</body>
+</html>
